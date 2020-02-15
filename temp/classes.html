@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <style>
+        html {
+            font-family: "Roboto Condensed", sans-serif;
+        }
+
+        .classes-container {
+            border: solid 2px #1ba253;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .accordian-container {
+            max-width: 900px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .accordion {
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            color: #e2e2e2;
+            display: none;
+            background-color: #353535;
+            overflow: hidden;
+            border: solid 2px #1ba253;
+            position: relative;
+        }
+
+        .accordion:after {
+            content: '\02795';
+            /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796";
+            /* Unicode character for "minus" sign (-) */
+        }
+
+        .bar {
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+            border-top: solid 2px #1ba253;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .accordian-action {
+            width: 150px;
+            color: #e2e2e2;
+            font-size: 14px;
+            height: 40px;
+            text-align: center;
+            background-color: #1ba253;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .accordian-action:hover {
+            filter: brightness(85%);
+        }
+
+        .cost {
+            position: absolute;
+            right: 40px;
+            bottom: 25px;
+            color: #1ba253;
+        }
+
+        .duration {
+            position: absolute;
+            left: 40px;
+            bottom: 25px;
+            color: #1ba253;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="classes-container">
+        <div class="accordian-container">
+
+            <button class="accordion">Private Lessons (Gymnastics, Parkour, Circus)</button>
+            <div class="panel">
+                <p>This offers students the best value for their investment. With a private lesson,the students will
+                    work
+                    one-on-one with
+                    an instructor, receiving personalized instruction and immediate correction. In learning the best
+                    methods,
+                    one-on-one,
+                    both beginning and advanced students will find they progress faster and more easily. Private lessons
+                    must be
+                    arranged by
+                    the instructor who will teach the lesson. Private lessons will be offered at $50 per hour.</p>
+                <div class="bar"></div>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+
+        <div class="accordian-container">
+
+            <button class="accordion">Co -Ed Parent & Tot Gymnastics</button>
+            <div class="panel">
+                <p>This 55 minute class is designed to enhance your child’s motor, listening, and social skills through
+                    fun
+                    gymnastics
+                    oriented activities (an adult is expected to actively participate with their child). This class is
+                    offered
+                    to both boys
+                    and girls, ages 18 months up to 3 years. The price is $65 per month.</p>
+                <div class="bar"></div>
+                <span class="duration">55 minutes</span>
+                <span class="cost">$65/ month</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Co-Ed Preschool Gymnastics</button>
+            <div class="panel">
+                <p>This 55 minute class is an introduction to basic gymnastics skills. Activities include motor movement
+                    in
+                    the
+                    form of
+                    tumbling, bar skills, beam skills, and beginner vault skills. This class is offered for boys and
+                    girls
+                    ages
+                    3-6 years
+                    old, with classes separated by age into two categories: 3-4 year olds and 5-6 year olds. For 3-4
+                    year
+                    olds
+                    there are 6
+                    students per instructor. For 5-6 year olds there are 8 students per instructor. The price is $65 per
+                    month.
+                    We also
+                    offer advanced preschool classes, which a child must get instructor approval to join. Advanced
+                    preschool
+                    classes are 80
+                    minutes long for $100 per month.</p>
+                <div class="bar"></div>
+                <span class="duration">55 minutes</span>
+                <span class="cost">$100/ month</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Girls Gymnastics</button>
+            <div class="panel">
+                <p>This 80 minute class consists of basic, intermediate, and advanced gymnastics skills. Within each
+                    class,
+                    instructors
+                    will modify skills and progressions to best suit each gymnast. Individualization of skills helps
+                    each
+                    gymnast to reach
+                    her full potential. Activities include vault, uneven bars, beam, tumbling, and trampoline.
+                    Instructors
+                    will
+                    also teach
+                    students to properly and safely strengthen and stretch. There are 8 students per instructor. This
+                    class
+                    is
+                    offered to
+                    girls ages 6 and up. The price is $100 per month.</p>
+                <div class="bar"></div>
+                <span class="duration">80 minutes</span>
+                <span class="cost">$100/ month</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Boys Gymnastics</button>
+            <div class="panel">
+                <p>This 80 minute class consists of basic, intermediate, and advanced gymnastics skills. Within each
+                    class,
+                    instructors
+                    will modify skills and progressions to best suit each gymnast. Individualization of skills helps
+                    each
+                    gymnast to reach
+                    his full potential. Activities include high bar, rings, horse, parallel bars, tumbling, vault, and
+                    trampoline.
+                    Instructors will also teach students to properly and safely strengthen and stretch. There are 8
+                    students
+                    per
+                    instructor.
+                    This class is offered to boys ages 6 years old and up. The price is $100 per month.</p>
+                <div class="bar"></div>
+                <span class="duration">80 minutes</span>
+                <span class="cost">$100/ month</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Co-Ed Tumbling</button>
+            <div class="panel">
+                <p>This 80 minute class is designed for boys and girls to learn basic through advanced tumbling skills
+                    and
+                    trampoline.
+                    Skills include handstands, cartwheels, round-offs, back handsprings, back tucks and front tucks,
+                    etc.
+                    There
+                    are 8
+                    students per instructor. This class is offered to all children ages 6 years old and up. The price is
+                    $100
+                    per month.</p>
+                <div class="bar"></div>
+                <span class="duration">80 minutes</span>
+                <span class="cost">$100/ month</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Co-Ed Parkour</button>
+            <div class="panel">
+                <p>This 55 minute class is designed for anyone interested in learning to improve their knowledge and
+                    execution
+                    of parkour
+                    skills, from beginners to advanced. Students will learn to navigate any obstacle utilizing specially
+                    designed parkour
+                    equipment, as well as take advantage of our trampolines and tumble track. No previous experience
+                    necessary.
+                    Available
+                    for kids ages 6 and up. There are 8 students per instructor. This class is $65 per month.</p>
+                <div class="bar"></div>
+                <span class="duration">55 minutes</span>
+                <span class="cost">$65/ month</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Co-Ed Circus/Aerial Arts</button>
+            <div class="panel">
+                <p>These 80 minute classes will focus on increasing strength, flexibility, technique and skill on
+                    specific
+                    aerial
+                    apparatus. Instructors will work to match skills to the student’s current level, creating an
+                    environment
+                    that can
+                    accommodate both beginners and the more advanced students. No previous experience required. All ages
+                    welcome. This class
+                    is $100 per month.</p>
+                <div class="bar"></div>
+                <span class="duration">80 minutes</span>
+                <span class="cost">$100/ month</span>
+                <button class="accordian-action">Register</button>
+            </div>
+        </div>
+
+
+        <div class="accordian-container">
+
+            <button class="accordion">Birthday Parties</button>
+            <div class="panel">
+                <p>This is an excellent way to celebrate a child’s birthday. The first 60 minutes include games,
+                    trampolines,
+                    and fun
+                    gymnastics activities. The final 30 minutes are for refreshments, food, and gifts provided by the
+                    parents.
+                    We provide
+                    the party room, decorations, and clean up. Birthday parties have a maximum limit of 20 children and
+                    cost
+                    $250.</p>
+                <div class="bar"></div>
+                <span class="duration">60 minutes gym + 30 minutes party</span>
+                <span class="cost">$250</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Open Gym</button>
+            <div class="panel">
+                <p>These 90 minute time slots are provided to allow both children and adults within the community the
+                    opportunity to
+                    explore within the gym in a supervised but non-instructional manner. Coaches will be available to
+                    provide
+                    guidance and
+                    spotting for skills when needed, but no formal instruction will take place during this time. To best
+                    serve
+                    the needs of
+                    our community, open gyms will be divided into three separate age groups: Preschool (1-6 years of
+                    age),
+                    School Age (6-18
+                    years of age) and Adults (18+ years of age). During the preschool open gym times, parents must
+                    remain
+                    present and with
+                    the child at all times. Parents of school age children are welcome to stay and watch open gym, but
+                    are
+                    not
+                    required to
+                    be present during the entire duration. The cost is $10 per visit.</p>
+                <div class="bar"></div>
+                <span class="duration">90 minutes</span>
+                <span class="cost">$10</span>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+        <div class="accordian-container">
+
+            <button class="accordion">Field trips</button>
+            <div class="panel">
+                <p>This is designed to introduce a group to basic gymnastics skills. This is 60 minutes long. The price
+                    will
+                    vary depending
+                    on the size of the group. Field trips are great for Cub Scout Troops, Brownies and Girl Scout
+                    Troops,
+                    special needs
+                    organizations, preschools, day care organizations, after school groups and more!</p>
+                <div class="bar"></div>
+                <button class="accordian-action">Register</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
